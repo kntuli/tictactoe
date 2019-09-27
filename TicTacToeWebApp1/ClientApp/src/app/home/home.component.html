@@ -1,0 +1,9 @@
+<h1>Tic-Tac-Toe Game</h1>
+<p>Your Are Player X or the Computer is Player O</p>
+<button class="btn btn-success" id="newGame" (click)="newGame()">New Game</button>
+<div id="message" [ngStyle]="{'color': gameoverColor}"><h1>{{winner}}</h1> </div>
+<div class="text-center" id="box">
+  <ul id="tttBoard">
+    <li class="tic" *ngFor="let cell of cells; let i = index" (click)="onSelect(i)" [ngStyle]="{'color': playerColor(cell)}">{{cell}}</li>
+  </ul>
+</div>

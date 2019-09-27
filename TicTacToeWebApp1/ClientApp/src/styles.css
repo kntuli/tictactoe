@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+#box {
+  width: 350px;
+  overflow: auto;
+  margin: 40px auto;
+  background: #666;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+#message {
+  color: green;
+  text-align: center;
+}
+#tttBoard li {
+  float: left;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  font-size: 50px;
+  background: #333;
+  color: #ccc;
+  list-style: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+  #tttBoard li:hover, #reset:hover {
+    cursor: pointer;
+    background: #000;
+  }
